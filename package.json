@@ -1,0 +1,87 @@
+{
+  "name": "@loogeek/style-guide",
+  "version": "0.4.6",
+  "description": "Loogeek's engineering style guide",
+  "homepage": "https://github.com/loogeek/style-guide#readme",
+  "bugs": {
+    "url": "https://github.com/loogeek/style-guide/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/loogeek/style-guide.git"
+  },
+  "license": "MPL-2.0",
+  "main": "index.js",
+  "files": [
+    "eslint",
+    "prettier",
+    "typescript.json"
+  ],
+  "scripts": {
+    "eslint-check": "eslint --max-warnings=0 .",
+    "prepare": "husky install",
+    "prettier-check": "prettier --check .",
+    "semantic-release": "semantic-release",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "prettier": "./prettier",
+  "dependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/eslint-parser": "^7.19.1",
+    "@rushstack/eslint-patch": "^1.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-typescript": "^3.5.1",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^27.0.4",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-playwright": "^0.11.2",
+    "eslint-plugin-react": "^7.31.8",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-testing-library": "^5.7.0",
+    "eslint-plugin-tsdoc": "^0.2.17",
+    "eslint-plugin-unicorn": "^43.0.2",
+    "prettier-plugin-packagejson": "^2.3.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@semantic-release/git": "^10.0.1",
+    "eslint": "^8.24.0",
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1",
+    "pretty-quick": "^3.1.3",
+    "semantic-release": "^19.0.5",
+    "typescript": "^4.8.4"
+  },
+  "peerDependencies": {
+    "@next/eslint-plugin-next": "^12.3.0",
+    "eslint": "^8.24.0",
+    "prettier": "^2.7.0",
+    "typescript": "^4.8.0"
+  },
+  "peerDependenciesMeta": {
+    "@next/eslint-plugin-next": {
+      "optional": true
+    },
+    "eslint": {
+      "optional": true
+    },
+    "prettier": {
+      "optional": true
+    },
+    "typescript": {
+      "optional": true
+    }
+  },
+  "packageManager": "pnpm@7.12.2",
+  "engines": {
+    "node": ">=16"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
